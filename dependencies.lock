@@ -1,0 +1,15 @@
+dependencies:
+  idf:
+    component_hash: null
+    source:
+      type: idf
+    version: 5.2.1
+  protocol_examples_common:
+    component_hash: null
+    source:
+      path: /home/cristina/esp-idf/examples/common_components/protocol_examples_common
+      type: local
+    version: '*'
+manifest_hash: fcb074db3b77c3df4952c425908d29d6ea14ae70fbd8fd65c0a0ca3dab35f2e4
+target: esp32
+version: 1.0.0

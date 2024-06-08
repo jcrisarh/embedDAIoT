@@ -1,0 +1,1 @@
+ninja: error: '/home/cristina/ESPECIALIDAD_IA/APPIOT/embebido/ssl/main/mqtt_eclipseprojects_io.pem', needed by 'mqtt_eclipseprojects_io.pem.S', missing and no known rule to make it

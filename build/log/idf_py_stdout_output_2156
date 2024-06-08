@@ -1,0 +1,74 @@
+[1/5] Performing build step for 'bootloader'
+[1/1] cd /home/cristina/ESPECIALIDAD_IA/APPIOT/embebido/ssl/build/bootloader/esp-idf/esptool_py && /home/cristina/.espressif/python_env/idf5.2_py3.9_env/bin/python /home/cristina/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/cristina/ESPECIALIDAD_IA/APPIOT/embebido/ssl/build/bootloader/bootloader.bin
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/5] No install step for 'bootloader'
+[3/5] cd /home/cristina/ESPECIALIDAD_IA/APPIOT/embebido/ssl/build/esp-idf/esptool_py && /home/cristina/.espressif/python_env/idf5.2_py3.9_env/bin/python /home/cristina/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/cristina/ESPECIALIDAD_IA/APPIOT/embebido/ssl/build/partition_table/partition-table.bin /home/cristina/ESPECIALIDAD_IA/APPIOT/embebido/ssl/build/mqtt_ssl.bin
+mqtt_ssl.bin binary size 0xdfb40 bytes. Smallest app partition is 0x100000 bytes. 0x204c0 bytes (13%) free.
+[4/5] Completed 'bootloader'
+[4/5] cd /home/cristina/esp-idf/components/esptool_py && /usr/local/bin/cmake -D IDF_PATH=/home/cristina/esp-idf -D "SERIAL_TOOL=/home/cristina/.espressif/python_env/idf5.2_py3.9_env/bin/python;;/home/cristina/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/cristina/ESPECIALIDAD_IA/APPIOT/embebido/ssl/build -P /home/cristina/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 mqtt_ssl.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port /dev/ttyUSB0
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: d8:bc:38:e4:99:e0
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000effff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26720 bytes to 16358...
+Writing at 0x00001000... (100 %)
+Wrote 26720 bytes (16358 compressed) at 0x00001000 in 0.5 seconds (effective 408.6 kbit/s)...
+Hash of data verified.
+Compressed 916288 bytes to 572160...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001c674... (5 %)
+Writing at 0x00027702... (8 %)
+Writing at 0x0002c461... (11 %)
+Writing at 0x00033071... (14 %)
+Writing at 0x0003f451... (17 %)
+Writing at 0x00044df1... (20 %)
+Writing at 0x0004aa15... (22 %)
+Writing at 0x0005060a... (25 %)
+Writing at 0x0005628a... (28 %)
+Writing at 0x0005bdc9... (31 %)
+Writing at 0x00061e80... (34 %)
+Writing at 0x0006836f... (37 %)
+Writing at 0x0006df50... (40 %)
+Writing at 0x00073a39... (42 %)
+Writing at 0x00078cfb... (45 %)
+Writing at 0x0007e113... (48 %)
+Writing at 0x000836c2... (51 %)
+Writing at 0x00088a82... (54 %)
+Writing at 0x0008e0c7... (57 %)
+Writing at 0x0009396d... (60 %)
+Writing at 0x00099ac8... (62 %)
+Writing at 0x0009f500... (65 %)
+Writing at 0x000a51bb... (68 %)
+Writing at 0x000aadbc... (71 %)
+Writing at 0x000b0817... (74 %)
+Writing at 0x000b61ed... (77 %)
+Writing at 0x000bbf31... (80 %)
+Writing at 0x000c194d... (82 %)
+Writing at 0x000c7e5b... (85 %)
+Writing at 0x000d314f... (88 %)
+Writing at 0x000d8e6e... (91 %)
+Writing at 0x000def11... (94 %)
+Writing at 0x000e4b76... (97 %)
+Writing at 0x000ea96d... (100 %)
+Wrote 916288 bytes (572160 compressed) at 0x00010000 in 13.0 seconds (effective 562.7 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 1322.2 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
