@@ -1,4 +1,4 @@
-ets Jul 29 2019 12:21:46
+�����ʒ�B�Z�	�: DRAets Jul 29 2019 12:21:46
 
 rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
 configsip: 0, SPIWP:0xee
@@ -24,340 +24,319 @@ entry 0x40080640
 [0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
 [0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
 [0;32mI (92) boot: End of partition table[0m
-[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=29818h (170008) map[0m
-[0;32mI (162) esp_image: segment 1: paddr=00039840 vaddr=3ff80000 size=00004h (     4) load[0m
-[0;32mI (163) esp_image: segment 2: paddr=0003984c vaddr=3ffb0000 size=03c14h ( 15380) load[0m
-[0;32mI (174) esp_image: segment 3: paddr=0003d468 vaddr=40080000 size=02bb0h ( 11184) load[0m
-[0;32mI (181) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=9bf34h (638772) map[0m
-[0;32mI (404) esp_image: segment 5: paddr=000dbf5c vaddr=40082bb0 size=13acch ( 80588) load[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=298a8h (170152) map[0m
+[0;32mI (163) esp_image: segment 1: paddr=000398d0 vaddr=3ff80000 size=00004h (     4) load[0m
+[0;32mI (163) esp_image: segment 2: paddr=000398dc vaddr=3ffb0000 size=03c14h ( 15380) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=0003d4f8 vaddr=40080000 size=02b20h ( 11040) load[0m
+[0;32mI (181) esp_image: segment 4: paddr=00040020 vaddr=400d0020 size=9bf90h (638864) map[0m
+[0;32mI (404) esp_image: segment 5: paddr=000dbfb8 vaddr=40082b20 size=13b5ch ( 80732) load[0m
 [0;32mI (447) boot: Loaded app from partition at offset 0x10000[0m
 [0;32mI (447) boot: Disabling RNG early entropy source...[0m
 [0;32mI (459) cpu_start: Multicore app[0m
-[0;32mI (467) cpu_start: Pro cpu start user code[0m
+[0;32mI (468) cpu_start: Pro cpu start user code[0m
 [0;32mI (468) cpu_start: cpu freq: 160000000 Hz[0m
 [0;32mI (468) cpu_start: Application information:[0m
 [0;32mI (471) cpu_start: Project name:     mqtt_ssl[0m
-[0;32mI (476) cpu_start: App version:      1[0m
-[0;32mI (480) cpu_start: Compile time:     Jun  8 2024 03:37:55[0m
-[0;32mI (486) cpu_start: ELF file SHA256:  2b89aad4f...[0m
-[0;32mI (492) cpu_start: ESP-IDF:          v5.2.1[0m
-[0;32mI (496) cpu_start: Min chip rev:     v0.0[0m
-[0;32mI (501) cpu_start: Max chip rev:     v3.99 [0m
-[0;32mI (506) cpu_start: Chip rev:         v3.1[0m
-[0;32mI (511) heap_init: Initializing. RAM available for dynamic allocation:[0m
-[0;32mI (518) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
-[0;32mI (524) heap_init: At 3FFB8348 len 00027CB8 (159 KiB): DRAM[0m
-[0;32mI (530) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
-[0;32mI (536) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
-[0;32mI (543) heap_init: At 4009667C len 00009984 (38 KiB): IRAM[0m
-[0;32mI (551) spi_flash: detected chip: generic[0m
-[0;32mI (554) spi_flash: flash io: dio[0m
-[0;33mW (558) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
-[0;32mI (572) main_task: Started on CPU0[0m
-[0;32mI (582) main_task: Calling app_main()[0m
-[0;32mI (582) mqtts_example: [APP] Startup..[0m
-[0;32mI (582) mqtts_example: [APP] Free memory: 278024 bytes[0m
-[0;32mI (582) mqtts_example: [APP] IDF version: v5.2.1[0m
-[0;32mI (612) example_connect: Start example_connect.[0m
-I (622) wifi:wifi driver task: 3ffbfea4, prio:23, stack:6656, core=0
-I (622) wifi:wifi firmware version: a9f5b59
-I (622) wifi:wifi certification version: v7.0
-I (622) wifi:config NVS flash: enabled
-I (622) wifi:config nano formating: disabled
-I (632) wifi:Init data frame dynamic rx buffer num: 32
-I (632) wifi:Init static rx mgmt buffer num: 5
-I (642) wifi:Init management short buffer num: 32
-I (642) wifi:Init dynamic tx buffer num: 32
-I (642) wifi:Init static rx buffer size: 1600
-I (652) wifi:Init static rx buffer num: 10
-I (652) wifi:Init dynamic rx buffer num: 32
-[0;32mI (662) wifi_init: rx ba win: 6[0m
-[0;32mI (662) wifi_init: tcpip mbox: 32[0m
-[0;32mI (662) wifi_init: udp mbox: 6[0m
-[0;32mI (672) wifi_init: tcp mbox: 6[0m
-[0;32mI (672) wifi_init: tcp tx win: 5760[0m
-[0;32mI (682) wifi_init: tcp rx win: 5760[0m
-[0;32mI (682) wifi_init: tcp mss: 1440[0m
-[0;32mI (682) wifi_init: WiFi IRAM OP enabled[0m
-[0;32mI (692) wifi_init: WiFi RX IRAM OP enabled[0m
-[0;32mI (692) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
-I (782) wifi:mode : sta (d8:bc:38:e4:99:e0)
-I (782) wifi:enable tsf
-[0;32mI (782) example_connect: Connecting to Telecentro-905c...[0m
-[0;32mI (792) example_connect: Waiting for IP(s)[0m
-I (3202) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1
-I (3452) wifi:state: init -> auth (b0)
-I (3462) wifi:state: auth -> assoc (0)
-I (3462) wifi:state: assoc -> run (10)
-I (3492) wifi:connected with Telecentro-905c, aid = 31, channel 11, BW20, bssid = 5c:fa:25:09:90:61
-I (3492) wifi:security: WPA2-PSK, phy: bgn, rssi: -49
-I (3492) wifi:pm start, type: 1
+[0;32mI (476) cpu_start: App version:      87e2ec0-dirty[0m
+[0;32mI (481) cpu_start: Compile time:     Jun  8 2024 13:34:45[0m
+[0;32mI (487) cpu_start: ELF file SHA256:  b3b1f70e1...[0m
+[0;32mI (493) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (498) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (502) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (507) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (512) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (519) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (525) heap_init: At 3FFB8348 len 00027CB8 (159 KiB): DRAM[0m
+[0;32mI (531) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (538) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (544) heap_init: At 4009667C len 00009984 (38 KiB): IRAM[0m
+[0;32mI (552) spi_flash: detected chip: generic[0m
+[0;32mI (555) spi_flash: flash io: dio[0m
+[0;33mW (559) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (573) main_task: Started on CPU0[0m
+[0;32mI (583) main_task: Calling app_main()[0m
+[0;32mI (583) mqtts_example: [APP] Startup..[0m
+[0;32mI (583) mqtts_example: [APP] Free memory: 278024 bytes[0m
+[0;32mI (583) mqtts_example: [APP] IDF version: v5.2.1[0m
+[0;32mI (613) example_connect: Start example_connect.[0m
+I (623) wifi:wifi driver task: 3ffbfea4, prio:23, stack:6656, core=0
+I (623) wifi:wifi firmware version: a9f5b59
+I (623) wifi:wifi certification version: v7.0
+I (623) wifi:config NVS flash: enabled
+I (623) wifi:config nano formating: disabled
+I (633) wifi:Init data frame dynamic rx buffer num: 32
+I (633) wifi:Init static rx mgmt buffer num: 5
+I (643) wifi:Init management short buffer num: 32
+I (643) wifi:Init dynamic tx buffer num: 32
+I (643) wifi:Init static rx buffer size: 1600
+I (653) wifi:Init static rx buffer num: 10
+I (653) wifi:Init dynamic rx buffer num: 32
+[0;32mI (663) wifi_init: rx ba win: 6[0m
+[0;32mI (663) wifi_init: tcpip mbox: 32[0m
+[0;32mI (663) wifi_init: udp mbox: 6[0m
+[0;32mI (673) wifi_init: tcp mbox: 6[0m
+[0;32mI (673) wifi_init: tcp tx win: 5760[0m
+[0;32mI (683) wifi_init: tcp rx win: 5760[0m
+[0;32mI (683) wifi_init: tcp mss: 1440[0m
+[0;32mI (683) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (693) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (693) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (783) wifi:mode : sta (d8:bc:38:e4:99:e0)
+I (783) wifi:enable tsf
+[0;32mI (783) example_connect: Connecting to Telecentro-905c...[0m
+[0;32mI (793) example_connect: Waiting for IP(s)[0m
+I (3203) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (3453) wifi:state: init -> auth (b0)
+I (3463) wifi:state: auth -> assoc (0)
+I (3463) wifi:state: assoc -> run (10)
+I (3503) wifi:connected with Telecentro-905c, aid = 20, channel 11, BW20, bssid = 5c:fa:25:09:90:61
+I (3503) wifi:security: WPA2-PSK, phy: bgn, rssi: -49
+I (3513) wifi:pm start, type: 1
 
-I (3492) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
-I (3502) wifi:AP's beacon interval = 102400 us, DTIM period = 1
-I (3522) wifi:<ba-add>idx:0 (ifx:0, 5c:fa:25:09:90:61), tid:0, ssn:1, winSize:64
-[0;32mI (4612) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:dabc:38ff:fee4:99e0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
-[0;32mI (5512) esp_netif_handlers: example_netif_sta ip: 192.168.0.17, mask: 255.255.255.0, gw: 192.168.0.1[0m
-[0;32mI (5512) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.0.17[0m
-[0;32mI (5522) example_common: Connected to example_netif_sta[0m
-[0;32mI (5522) example_common: - IPv4 address: 192.168.0.17,[0m
-[0;32mI (5532) example_common: - IPv6 address: fe80:0000:0000:0000:dabc:38ff:fee4:99e0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
-[0;32mI (5542) adc: calibration scheme version is Line Fitting[0m
-[0;32mI (5542) adc: Calibration Success[0m
-[0;32mI (5552) adc: calibration scheme version is Line Fitting[0m
-[0;32mI (5552) adc: Calibration Success[0m
-[0;32mI (5562) adc: calibration scheme version is Line Fitting[0m
-[0;32mI (5562) adc: Calibration Success[0m
-[0;32mI (5572) adc: calibration scheme version is Line Fitting[0m
-[0;32mI (5572) adc: Calibration Success[0m
-[0;32mI (5582) mqtts_example: [APP] Free memory: 230588 bytes[0m
-[0;32mI (5592) mqtts_example: Other event id:7[0m
-Valor ADC: 423
-[0;31mE (6202) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
-[0;32mI (6202) esp-tls-mbedtls: Failed to verify peer certificate![0m
-[0;31mE (6202) esp-tls: Failed to open new connection[0m
-[0;31mE (6212) transport_base: Failed to open a new connection[0m
-[0;31mE (6222) mqtt_client: Error transport connect[0m
-[0;32mI (6222) mqtts_example: MQTT_EVENT_ERROR[0m
-[0;32mI (6232) mqtts_example: Last error code reported from esp-tls: 0x801a[0m
-[0;32mI (6232) mqtts_example: Last tls stack error number: 0x2700[0m
-[0;32mI (6242) mqtts_example: Last captured errno : 0 (Success)[0m
-[0;32mI (6242) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
-[0;33mW (6252) mqtt_client: Publish: Losing qos0 data when client not connected[0m
-[0;32mI (6262) mqtts_example: binary sent with msg_id=-1[0m
-[0;32mI (21252) mqtts_example: Other event id:7[0m
-[0;31mE (21772) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
-[0;32mI (21772) esp-tls-mbedtls: Failed to verify peer certificate![0m
-[0;31mE (21772) esp-tls: Failed to open new connection[0m
-[0;31mE (21772) transport_base: Failed to open a new connection[0m
-[0;31mE (21782) mqtt_client: Error transport connect[0m
-[0;32mI (21792) mqtts_example: MQTT_EVENT_ERROR[0m
-[0;32mI (21792) mqtts_example: Last error code reported from esp-tls: 0x801a[0m
-[0;32mI (21802) mqtts_example: Last tls stack error number: 0x2700[0m
-[0;32mI (21802) mqtts_example: Last captured errno : 0 (Success)[0m
-[0;32mI (21812) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
-[0;32mI (31822) mqtts_example: Other event id:7[0m
-[0;31mE (32422) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
-[0;32mI (32422) esp-tls-mbedtls: Failed to verify peer certificate![0m
-[0;31mE (32422) esp-tls: Failed to open new connection[0m
-[0;31mE (32422) transport_base: Failed to open a new connection[0m
-[0;31mE (32432) mqtt_client: Error transport connect[0m
-[0;32mI (32442) mqtts_example: MQTT_EVENT_ERROR[0m
-[0;32mI (32442) mqtts_example: Last error code reported from esp-tls: 0x801a[0m
-[0;32mI (32452) mqtts_example: Last tls stack error number: 0x2700[0m
-[0;32mI (32452) mqtts_example: Last captured errno : 0 (Success)[0m
-[0;32mI (32462) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
-Valor ADC: 467
-[0;33mW (36262) mqtt_client: Publish: Losing qos0 data when client not connected[0m
-[0;32mI (36262) mqtts_example: binary sent with msg_id=-1[0m
-[0;32mI (47462) mqtts_example: Other event id:7[0m
-[0;31mE (48082) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
-[0;32mI (48082) esp-tls-mbedtls: Failed to verify peer certificate![0m
-[0;31mE (48092) esp-tls: Failed to open new connection[0m
-[0;31mE (48092) transport_base: Failed to open a new connection[0m
-[0;31mE (48102) mqtt_client: Error transport connect[0m
-[0;32mI (48102) mqtts_example: MQTT_EVENT_ERROR[0m
-[0;32mI (48112) mqtts_example: Last error code reported from esp-tls: 0x801a[0m
-[0;32mI (48112) mqtts_example: Last tls stack error number: 0x2700[0m
-[0;32mI (48122) mqtts_example: Last captured errno : 0 (Success)[0m
-[0;32mI (48132) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
-[0;32mI (63132) mqtts_example: Other event id:7[0m
-[0;31mE (63752) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
-[0;32mI (63752) esp-tls-mbedtls: Failed to verify peer certificate![0m
-[0;31mE (63752) esp-tls: Failed to open new connection[0m
-[0;31mE (63762) transport_base: Failed to open a new connection[0m
-[0;31mE (63772) mqtt_client: Error transport connect[0m
-[0;32mI (63772) mqtts_example: MQTT_EVENT_ERROR[0m
-[0;32mI (63782) mqtts_example: Last error code reported from esp-tls: 0x801a[0m
-[0;32mI (63782) mqtts_example: Last tls stack error number: 0x2700[0m
-[0;32mI (63792) mqtts_example: Last captured errno : 0 (Success)[0m
-[0;32mI (63802) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
-Valor ADC: 448
-[0;33mW (66262) mqtt_client: Publish: Losing qos0 data when client not connected[0m
-[0;32mI (66262) mqtts_example: binary sent with msg_id=-1[0m
-[0;32mI (78802) mqtts_example: Other event id:7[0m
-[0;31mE (79422) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
-[0;32mI (79422) esp-tls-mbedtls: Failed to verify peer certificate![0m
-[0;31mE (79432) esp-tls: Failed to open new connection[0m
-[0;31mE (79432) transport_base: Failed to open a new connection[0m
-[0;31mE (79442) mqtt_client: Error transport connect[0m
-[0;32mI (79442) mqtts_example: MQTT_EVENT_ERROR[0m
-[0;32mI (79452) mqtts_example: Last error code reported from esp-tls: 0x801a[0m
-[0;32mI (79452) mqtts_example: Last tls stack error number: 0x2700[0m
-[0;32mI (79462) mqtts_example: Last captured errno : 0 (Success)[0m
-[0;32mI (79472) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
-[0;32mI (94472) mqtts_example: Other event id:7[0m
-[0;31mE (95092) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
-[0;32mI (95092) esp-tls-mbedtls: Failed to verify peer certificate![0m
-[0;31mE (95092) esp-tls: Failed to open new connection[0m
-[0;31mE (95102) transport_base: Failed to open a new connection[0m
-[0;31mE (95102) mqtt_client: Error transport connect[0m
-[0;32mI (95112) mqtts_example: MQTT_EVENT_ERROR[0m
-[0;32mI (95112) mqtts_example: Last error code reported from esp-tls: 0x801a[0m
-[0;32mI (95122) mqtts_example: Last tls stack error number: 0x2700[0m
-[0;32mI (95132) mqtts_example: Last captured errno : 0 (Success)[0m
-[0;32mI (95132) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
-Valor ADC: 438
-[0;33mW (96262) mqtt_client: Publish: Losing qos0 data when client not connected[0m
-[0;32mI (96262) mqtts_example: binary sent with msg_id=-1[0m
-[0;32mI (105142) mqtts_example: Other event id:7[0m
-[0;31mE (105742) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
-[0;32mI (105742) esp-tls-mbedtls: Failed to verify peer certificate![0m
-[0;31mE (105742) esp-tls: Failed to open new connection[0m
-[0;31mE (105752) transport_base: Failed to open a new connection[0m
-[0;31mE (105762) mqtt_client: Error transport connect[0m
-[0;32mI (105762) mqtts_example: MQTT_EVENT_ERROR[0m
-[0;32mI (105762) mqtts_example: Last error code reported from esp-tls: 0x801a[0m
-[0;32mI (105772) mqtts_example: Last tls stack error number: 0x2700[0m
-[0;32mI (105782) mqtts_example: Last captured errno : 0 (Success)[0m
-[0;32mI (105782) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
-[0;32mI (115792) mqtts_example: Other event id:7[0m
-[0;31mE (116392) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
-[0;32mI (116392) esp-tls-mbedtls: Failed to verify peer certificate![0m
-[0;31mE (116392) esp-tls: Failed to open new connection[0m
-[0;31mE (116392) transport_base: Failed to open a new connection[0m
-[0;31mE (116402) mqtt_client: Error transport connect[0m
-[0;32mI (116412) mqtts_example: MQTT_EVENT_ERROR[0m
-[0;32mI (116412) mqtts_example: Last error code reported from esp-tls: 0x801a[0m
-[0;32mI (116422) mqtts_example: Last tls stack error number: 0x2700[0m
-[0;32mI (116422) mqtts_example: Last captured errno : 0 (Success)[0m
-[0;32mI (116432) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
-Valor ADC: 414
-[0;33mW (126262) mqtt_client: Publish: Losing qos0 data when client not connected[0m
-[0;32mI (126262) mqtts_example: binary sent with msg_id=-1[0m
-[0;32mI (126442) mqtts_example: Other event id:7[0m
-[0;31mE (127142) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
-[0;32mI (127142) esp-tls-mbedtls: Failed to verify peer certificate![0m
-[0;31mE (127142) esp-tls: Failed to open new connection[0m
-[0;31mE (127152) transport_base: Failed to open a new connection[0m
-[0;31mE (127162) mqtt_client: Error transport connect[0m
-[0;32mI (127162) mqtts_example: MQTT_EVENT_ERROR[0m
-[0;32mI (127162) mqtts_example: Last error code reported from esp-tls: 0x801a[0m
-[0;32mI (127172) mqtts_example: Last tls stack error number: 0x2700[0m
-[0;32mI (127182) mqtts_example: Last captured errno : 0 (Success)[0m
-[0;32mI (127182) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
-[0;32mI (142192) mqtts_example: Other event id:7[0m
-[0;31mE (142812) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
-[0;32mI (142812) esp-tls-mbedtls: Failed to verify peer certificate![0m
-[0;31mE (142812) esp-tls: Failed to open new connection[0m
-[0;31mE (142822) transport_base: Failed to open a new connection[0m
-[0;31mE (142832) mqtt_client: Error transport connect[0m
-[0;32mI (142832) mqtts_example: MQTT_EVENT_ERROR[0m
-[0;32mI (142832) mqtts_example: Last error code reported from esp-tls: 0x801a[0m
-[0;32mI (142842) mqtts_example: Last tls stack error number: 0x2700[0m
-[0;32mI (142852) mqtts_example: Last captured errno : 0 (Success)[0m
-[0;32mI (142852) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
-Valor ADC: 464
-[0;33mW (156262) mqtt_client: Publish: Losing qos0 data when client not connected[0m
-[0;32mI (156262) mqtts_example: binary sent with msg_id=-1[0m
-[0;32mI (157862) mqtts_example: Other event id:7[0m
-[0;31mE (158472) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
-[0;32mI (158472) esp-tls-mbedtls: Failed to verify peer certificate![0m
-[0;31mE (158482) esp-tls: Failed to open new connection[0m
-[0;31mE (158482) transport_base: Failed to open a new connection[0m
-[0;31mE (158492) mqtt_client: Error transport connect[0m
-[0;32mI (158492) mqtts_example: MQTT_EVENT_ERROR[0m
-[0;32mI (158502) mqtts_example: Last error code reported from esp-tls: 0x801a[0m
-[0;32mI (158512) mqtts_example: Last tls stack error number: 0x2700[0m
-[0;32mI (158512) mqtts_example: Last captured errno : 0 (Success)[0m
-[0;32mI (158522) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
-[0;32mI (173522) mqtts_example: Other event id:7[0m
-[0;31mE (174142) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
-[0;32mI (174142) esp-tls-mbedtls: Failed to verify peer certificate![0m
-[0;31mE (174142) esp-tls: Failed to open new connection[0m
-[0;31mE (174152) transport_base: Failed to open a new connection[0m
-[0;31mE (174162) mqtt_client: Error transport connect[0m
-[0;32mI (174162) mqtts_example: MQTT_EVENT_ERROR[0m
-[0;32mI (174172) mqtts_example: Last error code reported from esp-tls: 0x801a[0m
-[0;32mI (174172) mqtts_example: Last tls stack error number: 0x2700[0m
-[0;32mI (174182) mqtts_example: Last captured errno : 0 (Success)[0m
-[0;32mI (174192) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
-Valor ADC: 449
-[0;33mW (186262) mqtt_client: Publish: Losing qos0 data when client not connected[0m
-[0;32mI (186262) mqtts_example: binary sent with msg_id=-1[0m
-[0;32mI (189192) mqtts_example: Other event id:7[0m
-[0;31mE (189812) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
-[0;32mI (189812) esp-tls-mbedtls: Failed to verify peer certificate![0m
-[0;31mE (189822) esp-tls: Failed to open new connection[0m
-[0;31mE (189822) transport_base: Failed to open a new connection[0m
-[0;31mE (189832) mqtt_client: Error transport connect[0m
-[0;32mI (189832) mqtts_example: MQTT_EVENT_ERROR[0m
-[0;32mI (189842) mqtts_example: Last error code reported from esp-tls: 0x801a[0m
-[0;32mI (189852) mqtts_example: Last tls stack error number: 0x2700[0m
-[0;32mI (189852) mqtts_example: Last captured errno : 0 (Success)[0m
-[0;32mI (189862) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
-[0;32mI (204862) mqtts_example: Other event id:7[0m
-[0;31mE (205482) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
-[0;32mI (205482) esp-tls-mbedtls: Failed to verify peer certificate![0m
-[0;31mE (205492) esp-tls: Failed to open new connection[0m
-[0;31mE (205492) transport_base: Failed to open a new connection[0m
-[0;31mE (205502) mqtt_client: Error transport connect[0m
-[0;32mI (205502) mqtts_example: MQTT_EVENT_ERROR[0m
-[0;32mI (205512) mqtts_example: Last error code reported from esp-tls: 0x801a[0m
-[0;32mI (205522) mqtts_example: Last tls stack error number: 0x2700[0m
-[0;32mI (205522) mqtts_example: Last captured errno : 0 (Success)[0m
-[0;32mI (205532) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
-Valor ADC: 432
-[0;33mW (216262) mqtt_client: Publish: Losing qos0 data when client not connected[0m
-[0;32mI (216262) mqtts_example: binary sent with msg_id=-1[0m
-[0;32mI (220532) mqtts_example: Other event id:7[0m
-[0;31mE (221152) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
-[0;32mI (221152) esp-tls-mbedtls: Failed to verify peer certificate![0m
-[0;31mE (221152) esp-tls: Failed to open new connection[0m
-[0;31mE (221152) transport_base: Failed to open a new connection[0m
-[0;31mE (221162) mqtt_client: Error transport connect[0m
-[0;32mI (221172) mqtts_example: MQTT_EVENT_ERROR[0m
-[0;32mI (221172) mqtts_example: Last error code reported from esp-tls: 0x801a[0m
-[0;32mI (221182) mqtts_example: Last tls stack error number: 0x2700[0m
-[0;32mI (221182) mqtts_example: Last captured errno : 0 (Success)[0m
-[0;32mI (221192) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
-[0;32mI (231202) mqtts_example: Other event id:7[0m
-[0;31mE (231802) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
-[0;32mI (231802) esp-tls-mbedtls: Failed to verify peer certificate![0m
-[0;31mE (231802) esp-tls: Failed to open new connection[0m
-[0;31mE (231812) transport_base: Failed to open a new connection[0m
-[0;31mE (231822) mqtt_client: Error transport connect[0m
-[0;32mI (231822) mqtts_example: MQTT_EVENT_ERROR[0m
-[0;32mI (231822) mqtts_example: Last error code reported from esp-tls: 0x801a[0m
-[0;32mI (231832) mqtts_example: Last tls stack error number: 0x2700[0m
-[0;32mI (231842) mqtts_example: Last captured errno : 0 (Success)[0m
-[0;32mI (231842) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
-[0;32mI (241852) mqtts_example: Other event id:7[0m
-[0;31mE (242352) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
-[0;32mI (242352) esp-tls-mbedtls: Failed to verify peer certificate![0m
-[0;31mE (242352) esp-tls: Failed to open new connection[0m
-[0;31mE (242352) transport_base: Failed to open a new connection[0m
-[0;31mE (242362) mqtt_client: Error transport connect[0m
-[0;32mI (242372) mqtts_example: MQTT_EVENT_ERROR[0m
-[0;32mI (242372) mqtts_example: Last error code reported from esp-tls: 0x801a[0m
-[0;32mI (242382) mqtts_example: Last tls stack error number: 0x2700[0m
-[0;32mI (242382) mqtts_example: Last captured errno : 0 (Success)[0m
-[0;32mI (242392) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
-Valor ADC: 435
-[0;33mW (246262) mqtt_client: Publish: Losing qos0 data when client not connected[0m
-[0;32mI (246262) mqtts_example: binary sent with msg_id=-1[0m
-[0;32mI (252402) mqtts_example: Other event id:7[0m
-[0;31mE (253002) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
-[0;32mI (253002) esp-tls-mbedtls: Failed to verify peer certificate![0m
-[0;31mE (253002) esp-tls: Failed to open new connection[0m
-[0;31mE (253012) transport_base: Failed to open a new connection[0m
-[0;31mE (253022) mqtt_client: Error transport connect[0m
-[0;32mI (253022) mqtts_example: MQTT_EVENT_ERROR[0m
-[0;32mI (253032) mqtts_example: Last error code reported from esp-tls: 0x801a[0m
-[0;32mI (253032) mqtts_example: Last tls stack error number: 0x2700[0m
-[0;32mI (253042) mqtts_example: Last captured errno : 0 (Success)[0m
-[0;32mI (253052) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
-[0;32mI (268052) mqtts_example: Other event id:7[0m
-[0;31mE (268662) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
-[0;32mI (268662) esp-tls-mbedtls: Failed to verify peer certificate![0m
-[0;31mE (268662) esp-tls: Failed to open new connection[0m
-[0;31mE (268672) transport_base: Failed to open a new connection[0m
-[0;31mE (268682) mqtt_client: Error transport connect[0m
-[0;32mI (268682) mqtts_example: MQTT_EVENT_ERROR[0m
-[0;32mI (268682) mqtts_example: Last error code reported from esp-tls: 0x801a[0m
-[0;32mI (268692) mqtts_example: Last tls stack error number: 0x2700[0m
-[0;32mI (268702) mqtts_example: Last captured errno : 0 (Success)[0m
-[0;32mI (268702) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
-Valor ADC: 411
-[0;33mW (276262) mqtt_client: Publish: Losing qos0 data when client not connected[0m
-[0;32mI (276262) mqtts_example: binary sent with msg_id=-1[0m
+I (3513) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3533) wifi:<ba-add>idx:0 (ifx:0, 5c:fa:25:09:90:61), tid:0, ssn:1, winSize:64
+I (3593) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (4613) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:dabc:38ff:fee4:99e0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (5523) esp_netif_handlers: example_netif_sta ip: 192.168.0.17, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (5523) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.0.17[0m
+[0;32mI (5533) example_common: Connected to example_netif_sta[0m
+[0;32mI (5533) example_common: - IPv4 address: 192.168.0.17,[0m
+[0;32mI (5543) example_common: - IPv6 address: fe80:0000:0000:0000:dabc:38ff:fee4:99e0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (5553) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (5553) adc: Calibration Success[0m
+[0;32mI (5563) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (5563) adc: Calibration Success[0m
+[0;32mI (5573) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (5573) adc: Calibration Success[0m
+[0;32mI (5583) adc: calibration scheme version is Line Fitting[0m
+[0;32mI (5583) adc: Calibration Success[0m
+[0;32mI (5593) mqtts_example: [APP] Free memory: 230588 bytes[0m
+[0;32mI (5603) mqtts_example: Other event id:7[0m
+Valor ADC: 450
+[0;31mE (6193) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (6193) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (6193) esp-tls: Failed to open new connection[0m
+[0;31mE (6203) transport_base: Failed to open a new connection[0m
+[0;31mE (6213) mqtt_client: Error transport connect[0m
+[0;31mE (6213) mqtts_example: Last error reported from esp-tls: 0x801a[0m
+[0;31mE (6213) mqtts_example: Last error reported from tls stack: 0x2700[0m
+[0;32mI (6223) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;32mI (6233) mqtts_example: Last error code reported from esp-tls: 0x801a[0m
+[0;32mI (6233) mqtts_example: Last tls stack error number: 0x2700[0m
+[0;32mI (6243) mqtts_example: Last captured errno : 0 (Success)[0m
+[0;32mI (6253) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;33mW (6253) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (6263) mqtts_example: binary sent with msg_id=-1[0m
+[0;32mI (16263) mqtts_example: Other event id:7[0m
+[0;31mE (16743) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (16743) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (16743) esp-tls: Failed to open new connection[0m
+[0;31mE (16743) transport_base: Failed to open a new connection[0m
+[0;31mE (16753) mqtt_client: Error transport connect[0m
+[0;31mE (16763) mqtts_example: Last error reported from esp-tls: 0x801a[0m
+[0;31mE (16763) mqtts_example: Last error reported from tls stack: 0x2700[0m
+[0;32mI (16773) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;32mI (16773) mqtts_example: Last error code reported from esp-tls: 0x801a[0m
+[0;32mI (16783) mqtts_example: Last tls stack error number: 0x2700[0m
+[0;32mI (16793) mqtts_example: Last captured errno : 0 (Success)[0m
+[0;32mI (16793) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (26803) mqtts_example: Other event id:7[0m
+[0;31mE (27283) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (27283) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (27293) esp-tls: Failed to open new connection[0m
+[0;31mE (27293) transport_base: Failed to open a new connection[0m
+[0;31mE (27303) mqtt_client: Error transport connect[0m
+[0;31mE (27303) mqtts_example: Last error reported from esp-tls: 0x801a[0m
+[0;31mE (27313) mqtts_example: Last error reported from tls stack: 0x2700[0m
+[0;32mI (27323) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;32mI (27323) mqtts_example: Last error code reported from esp-tls: 0x801a[0m
+[0;32mI (27333) mqtts_example: Last tls stack error number: 0x2700[0m
+[0;32mI (27333) mqtts_example: Last captured errno : 0 (Success)[0m
+[0;32mI (27343) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+Valor ADC: 356
+[0;33mW (36263) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (36263) mqtts_example: binary sent with msg_id=-1[0m
+[0;32mI (37353) mqtts_example: Other event id:7[0m
+[0;31mE (37833) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (37833) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (37843) esp-tls: Failed to open new connection[0m
+[0;31mE (37843) transport_base: Failed to open a new connection[0m
+[0;31mE (37853) mqtt_client: Error transport connect[0m
+[0;31mE (37853) mqtts_example: Last error reported from esp-tls: 0x801a[0m
+[0;31mE (37863) mqtts_example: Last error reported from tls stack: 0x2700[0m
+[0;32mI (37873) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;32mI (37873) mqtts_example: Last error code reported from esp-tls: 0x801a[0m
+[0;32mI (37883) mqtts_example: Last tls stack error number: 0x2700[0m
+[0;32mI (37883) mqtts_example: Last captured errno : 0 (Success)[0m
+[0;32mI (37893) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (47903) mqtts_example: Other event id:7[0m
+[0;31mE (48483) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (48483) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (48483) esp-tls: Failed to open new connection[0m
+[0;31mE (48493) transport_base: Failed to open a new connection[0m
+[0;31mE (48503) mqtt_client: Error transport connect[0m
+[0;31mE (48503) mqtts_example: Last error reported from esp-tls: 0x801a[0m
+[0;31mE (48513) mqtts_example: Last error reported from tls stack: 0x2700[0m
+[0;32mI (48513) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;32mI (48523) mqtts_example: Last error code reported from esp-tls: 0x801a[0m
+[0;32mI (48533) mqtts_example: Last tls stack error number: 0x2700[0m
+[0;32mI (48533) mqtts_example: Last captured errno : 0 (Success)[0m
+[0;32mI (48543) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (63543) mqtts_example: Other event id:7[0m
+[0;31mE (64153) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (64153) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (64153) esp-tls: Failed to open new connection[0m
+[0;31mE (64163) transport_base: Failed to open a new connection[0m
+[0;31mE (64173) mqtt_client: Error transport connect[0m
+[0;31mE (64173) mqtts_example: Last error reported from esp-tls: 0x801a[0m
+[0;31mE (64183) mqtts_example: Last error reported from tls stack: 0x2700[0m
+[0;32mI (64183) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;32mI (64193) mqtts_example: Last error code reported from esp-tls: 0x801a[0m
+[0;32mI (64203) mqtts_example: Last tls stack error number: 0x2700[0m
+[0;32mI (64203) mqtts_example: Last captured errno : 0 (Success)[0m
+[0;32mI (64213) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+Valor ADC: 369
+[0;33mW (66263) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (66263) mqtts_example: binary sent with msg_id=-1[0m
+[0;32mI (79213) mqtts_example: Other event id:7[0m
+[0;31mE (79723) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (79723) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (79723) esp-tls: Failed to open new connection[0m
+[0;31mE (79723) transport_base: Failed to open a new connection[0m
+[0;31mE (79733) mqtt_client: Error transport connect[0m
+[0;31mE (79743) mqtts_example: Last error reported from esp-tls: 0x801a[0m
+[0;31mE (79743) mqtts_example: Last error reported from tls stack: 0x2700[0m
+[0;32mI (79753) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;32mI (79753) mqtts_example: Last error code reported from esp-tls: 0x801a[0m
+[0;32mI (79763) mqtts_example: Last tls stack error number: 0x2700[0m
+[0;32mI (79773) mqtts_example: Last captured errno : 0 (Success)[0m
+[0;32mI (79773) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (89783) mqtts_example: Other event id:7[0m
+[0;31mE (90373) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (90373) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (90373) esp-tls: Failed to open new connection[0m
+[0;31mE (90373) transport_base: Failed to open a new connection[0m
+[0;31mE (90383) mqtt_client: Error transport connect[0m
+[0;31mE (90393) mqtts_example: Last error reported from esp-tls: 0x801a[0m
+[0;31mE (90393) mqtts_example: Last error reported from tls stack: 0x2700[0m
+[0;32mI (90403) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;32mI (90403) mqtts_example: Last error code reported from esp-tls: 0x801a[0m
+[0;32mI (90413) mqtts_example: Last tls stack error number: 0x2700[0m
+[0;32mI (90423) mqtts_example: Last captured errno : 0 (Success)[0m
+[0;32mI (90423) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+Valor ADC: 505
+[0;33mW (96263) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (96263) mqtts_example: binary sent with msg_id=-1[0m
+[0;32mI (100433) mqtts_example: Other event id:7[0m
+[0;31mE (101013) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (101023) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (101023) esp-tls: Failed to open new connection[0m
+[0;31mE (101023) transport_base: Failed to open a new connection[0m
+[0;31mE (101033) mqtt_client: Error transport connect[0m
+[0;31mE (101033) mqtts_example: Last error reported from esp-tls: 0x801a[0m
+[0;31mE (101043) mqtts_example: Last error reported from tls stack: 0x2700[0m
+[0;32mI (101053) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;32mI (101053) mqtts_example: Last error code reported from esp-tls: 0x801a[0m
+[0;32mI (101063) mqtts_example: Last tls stack error number: 0x2700[0m
+[0;32mI (101073) mqtts_example: Last captured errno : 0 (Success)[0m
+[0;32mI (101073) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (111083) mqtts_example: Other event id:7[0m
+[0;31mE (111673) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (111673) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (111673) esp-tls: Failed to open new connection[0m
+[0;31mE (111683) transport_base: Failed to open a new connection[0m
+[0;31mE (111693) mqtt_client: Error transport connect[0m
+[0;31mE (111693) mqtts_example: Last error reported from esp-tls: 0x801a[0m
+[0;31mE (111703) mqtts_example: Last error reported from tls stack: 0x2700[0m
+[0;32mI (111703) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;32mI (111713) mqtts_example: Last error code reported from esp-tls: 0x801a[0m
+[0;32mI (111723) mqtts_example: Last tls stack error number: 0x2700[0m
+[0;32mI (111723) mqtts_example: Last captured errno : 0 (Success)[0m
+[0;32mI (111733) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+Valor ADC: 409
+[0;33mW (126263) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (126263) mqtts_example: binary sent with msg_id=-1[0m
+[0;32mI (126733) mqtts_example: Other event id:7[0m
+[0;31mE (127243) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (127243) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (127243) esp-tls: Failed to open new connection[0m
+[0;31mE (127253) transport_base: Failed to open a new connection[0m
+[0;31mE (127253) mqtt_client: Error transport connect[0m
+[0;31mE (127263) mqtts_example: Last error reported from esp-tls: 0x801a[0m
+[0;31mE (127263) mqtts_example: Last error reported from tls stack: 0x2700[0m
+[0;32mI (127273) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;32mI (127283) mqtts_example: Last error code reported from esp-tls: 0x801a[0m
+[0;32mI (127283) mqtts_example: Last tls stack error number: 0x2700[0m
+[0;32mI (127293) mqtts_example: Last captured errno : 0 (Success)[0m
+[0;32mI (127303) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (142303) mqtts_example: Other event id:7[0m
+[0;31mE (142903) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (142903) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (142903) esp-tls: Failed to open new connection[0m
+[0;31mE (142913) transport_base: Failed to open a new connection[0m
+[0;31mE (142923) mqtt_client: Error transport connect[0m
+[0;31mE (142923) mqtts_example: Last error reported from esp-tls: 0x801a[0m
+[0;31mE (142933) mqtts_example: Last error reported from tls stack: 0x2700[0m
+[0;32mI (142933) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;32mI (142943) mqtts_example: Last error code reported from esp-tls: 0x801a[0m
+[0;32mI (142943) mqtts_example: Last tls stack error number: 0x2700[0m
+[0;32mI (142953) mqtts_example: Last captured errno : 0 (Success)[0m
+[0;32mI (142963) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+Valor ADC: 409
+[0;33mW (156263) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (156263) mqtts_example: binary sent with msg_id=-1[0m
+[0;32mI (157963) mqtts_example: Other event id:7[0m
+[0;31mE (158573) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (158573) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (158573) esp-tls: Failed to open new connection[0m
+[0;31mE (158573) transport_base: Failed to open a new connection[0m
+[0;31mE (158583) mqtt_client: Error transport connect[0m
+[0;31mE (158593) mqtts_example: Last error reported from esp-tls: 0x801a[0m
+[0;31mE (158593) mqtts_example: Last error reported from tls stack: 0x2700[0m
+[0;32mI (158603) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;32mI (158603) mqtts_example: Last error code reported from esp-tls: 0x801a[0m
+[0;32mI (158613) mqtts_example: Last tls stack error number: 0x2700[0m
+[0;32mI (158623) mqtts_example: Last captured errno : 0 (Success)[0m
+[0;32mI (158623) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (168633) mqtts_example: Other event id:7[0m
+[0;31mE (169113) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (169113) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (169123) esp-tls: Failed to open new connection[0m
+[0;31mE (169123) transport_base: Failed to open a new connection[0m
+[0;31mE (169133) mqtt_client: Error transport connect[0m
+[0;31mE (169133) mqtts_example: Last error reported from esp-tls: 0x801a[0m
+[0;31mE (169143) mqtts_example: Last error reported from tls stack: 0x2700[0m
+[0;32mI (169153) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;32mI (169153) mqtts_example: Last error code reported from esp-tls: 0x801a[0m
+[0;32mI (169163) mqtts_example: Last tls stack error number: 0x2700[0m
+[0;32mI (169173) mqtts_example: Last captured errno : 0 (Success)[0m
+[0;32mI (169173) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (179183) mqtts_example: Other event id:7[0m
+[0;31mE (179763) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (179773) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (179773) esp-tls: Failed to open new connection[0m
+[0;31mE (179773) transport_base: Failed to open a new connection[0m
+[0;31mE (179783) mqtt_client: Error transport connect[0m
+[0;31mE (179783) mqtts_example: Last error reported from esp-tls: 0x801a[0m
+[0;31mE (179793) mqtts_example: Last error reported from tls stack: 0x2700[0m
+[0;32mI (179803) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;32mI (179803) mqtts_example: Last error code reported from esp-tls: 0x801a[0m
+[0;32mI (179813) mqtts_example: Last tls stack error number: 0x2700[0m
+[0;32mI (179823) mqtts_example: Last captured errno : 0 (Success)[0m
+[0;32mI (179823) mqtts_example: MQTT_EVENT_DISCONNECTED[0m
+Valor ADC: 489
+[0;33mW (186263) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (186263) mqtts_example: binary sent with msg_id=-1[0m
+[0;32mI (189833) mqtts_example: Other event id:7[0m
+[0;31mE (190423) esp-tls-mbedtls: mbedtls_ssl_handshake returned -0x2700[0m
+[0;32mI (190423) esp-tls-mbedtls: Failed to verify peer certificate![0m
+[0;31mE (190423) esp-tls: Failed to open new connection[0m
+[0;31mE (190433) transport_base: Failed to open a new connection[0m
+[0;31mE (190443) mqtt_client: Error transport connect[0m
+[0;31mE (190443) mqtts_example: Last error reported from esp-tls: 0x801a[0m
+[0;31mE (190443) mqtts_example: Last error reported from tls stack: 0x2700[0m
+[0;32mI (190453) mqtts_example: MQTT_EVENT_ERROR[0m
+[0;32mI (190463) mqtts_example: Last error code reported from esp-tls: 0x801a[0m
+[0;32mI (190463) mqtts_example: Last tls stack error number: 0x2700[0m
+[0;32mI (190473) mqtts_example: Last captured errno : 0 (Success)[0m
+[0;32mI (190483) mqtts_example: MQTT_EVENT_DISCONNECTED[0m

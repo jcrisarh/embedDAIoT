@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "mqtt_ssl",
-    "project_version":    "1",
+    "project_version":    "87e2ec0-dirty",
     "project_path":       "/home/cristina/ESPECIALIDAD_IA/APPIOT/embebido/ssl",
     "idf_path":           "/home/cristina/esp-idf",
     "build_dir":          "/home/cristina/ESPECIALIDAD_IA/APPIOT/embebido/ssl/build",

@@ -64,7 +64,7 @@
     "BOOTLOADER_WDT_TIME_MS": 9000,
     "BROKER_BIN_SIZE_TO_SEND": 20000,
     "BROKER_CERTIFICATE_OVERRIDE": "",
-    "BROKER_URI": "mqtts://mosquitto.daiot.com.ar:8883",
+    "BROKER_URI": "mqtts://mqtt.eclipseprojects.io:8883",
     "BT_ENABLED": false,
     "COMPILER_CXX_EXCEPTIONS": false,
     "COMPILER_CXX_RTTI": false,

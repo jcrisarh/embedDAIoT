@@ -278,7 +278,7 @@
 #define CONFIG_PARTITION_TABLE_FILENAME "partitions_singleapp.csv"
 #define CONFIG_PARTITION_TABLE_OFFSET 0x8000
 #define CONFIG_PARTITION_TABLE_MD5 1
-#define CONFIG_BROKER_URI "mqtts://mosquitto.daiot.com.ar:8883"
+#define CONFIG_BROKER_URI "mqtts://mqtt.eclipseprojects.io:8883"
 #define CONFIG_BROKER_CERTIFICATE_OVERRIDE ""
 #define CONFIG_BROKER_BIN_SIZE_TO_SEND 20000
 #define CONFIG_ENV_GPIO_RANGE_MIN 0
