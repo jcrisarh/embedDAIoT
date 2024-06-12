@@ -1,8 +1,12 @@
 ## Configuración del Proyecto
 
-1. **Clonar el Repositorio:**  
+1. **Clonar el Repositorio:**
+   ```
+   git clone https://github.com/jcrisarh/embedDAIoT.git
+   cd embedDAIoT
+   ```
 
-2. **Configurar el Entorno de Desarrollo ESP-IDF:**  
+3. **Configurar el Entorno de Desarrollo ESP-IDF:**  
 - Descarga e instala el ESP-IDF según las instrucciones en [ESP-IDF Programming Guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html).
 - Configura las variables de entorno necesarias según tu sistema operativo.
 
@@ -15,8 +19,12 @@
   OUT            ->   Pin GPIO
   ```
 
-4. **Configurar las Credenciales de Conexión al Broker MQTT:**  
-- Abre el archivo `mqtt_config.h` en el proyecto.
+4. **Configurar las Credenciales de Conexión al Broker MQTT:**
+   - Abre una terminal en la carpeta del proyecto.
+   - Ejecuta el siguiente comando:
+   ```
+  idf.py menuconfig
+  ```
 - Ingresa la dirección del broker MQTT, el puerto y las credenciales de autenticación según corresponda.
 
 5. **Certificados TLS:**  
