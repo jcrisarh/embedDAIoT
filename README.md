@@ -23,8 +23,8 @@
    - Abre una terminal en la carpeta del proyecto.
    - Ejecuta el siguiente comando:
    ```
-  idf.py menuconfig
-  ```
+   idf.py menuconfig
+   ```
 - Ingresa la dirección del broker MQTT, el puerto y las credenciales de autenticación según corresponda.
 
 5. **Certificados TLS:**  
@@ -37,6 +37,7 @@
   ```
   idf.py build
   ```
+  
 - Una vez compilado, carga el firmware en el ESP32 con el siguiente comando:
   ```
   idf.py -p /dev/ttyUSB0 flash
